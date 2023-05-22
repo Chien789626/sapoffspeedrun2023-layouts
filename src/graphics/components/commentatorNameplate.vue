@@ -47,7 +47,7 @@ onMounted(() => {
       return;
     }
     isShow.value++;
-  }, 15000);
+  }, 5000);
 });
 
 /*
