@@ -1,0 +1,182 @@
+body {
+  background-image: url('../images/4x3DS.png');
+}
+
+/*--------------------------------------------------
+timer
+--------------------------------------------------*/
+.time {
+  position: absolute;
+  width: 360px;
+  height: 130px;
+  left: 285px;
+  top: 210px;
+  text-align: center;
+}
+
+.time p {
+  margin-bottom: 0;
+}
+
+.time > span {
+  font-size: 92px;
+  font-family: 'GenEiMGothic2-Heavy';
+}
+
+.time > span.stopped {
+  color: white;
+  -webkit-text-stroke: 2.7px #1d6d97;
+}
+
+.time > span.running {
+  color: white;
+  -webkit-text-stroke: 2.7px #1d6d97;
+}
+
+.time > span.paused {
+  color: #bfbfbf;
+  -webkit-text-stroke: 2.7px #4e4e4e;
+}
+
+.time > span.finished {
+  color: #fbf46b;
+  -webkit-text-stroke: 2.7px #a7a31e;
+}
+
+.est,
+.mes {
+  font-size: 36px;
+  line-height: 80%;
+  font-family: 'GenEiMGothic2-Bold';
+  color: white;
+  -webkit-text-stroke: 2px #1d6d97;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+}
+
+.est {
+  padding-left: 15px;
+}
+
+/*--------------------------------------------------
+gameinfo
+DSレイアウトが1人のみのため、画像に要素固定。
+--------------------------------------------------*/
+.gametitle,
+.runcategory,
+.runsystem {
+  opacity: 0;
+}
+
+/*--------------------------------------------------
+player
+--------------------------------------------------*/
+.player1 .player_name {
+  position: absolute;
+  width: 410px;
+  height: 60px;
+  left: 793px;
+  top: 987px;
+  font-size: 40px;
+  font-family: 'GenEiMGothic2-Heavy';
+  text-align: center;
+}
+
+.controller,
+.microphone,
+.player1.clear .player_time {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+
+.player1 .sns {
+  position: absolute;
+  width: 410px;
+  height: 60px;
+  left: 793px;
+  top: 987px;
+  font-size: 36px;
+  font-family: 'GenEiMGothic2-Heavy';
+  text-align: center;
+}
+
+.twitch,
+.twitter,
+.youtube {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.twitch_icon > img {
+  vertical-align: middle;
+  margin-right: 15px;
+  width: 34px;
+  height: 34px;
+}
+
+.twitter_icon > img {
+  vertical-align: middle;
+  margin-right: 15px;
+  width: 34px;
+  height: 34px;
+}
+
+.youtube_icon > img {
+  vertical-align: middle;
+  margin-right: 15px;
+  width: 36px;
+  height: 36px;
+}
+
+/*--------------------------------------------------
+Commentator
+--------------------------------------------------*/
+.commentator1 .commentator_name {
+  position: absolute;
+  width: 410px;
+  height: 60px;
+  left: 1283px;
+  top: 987px;
+}
+
+.commentator1 .commentator_name > span {
+  display: inline-block;
+  width: 410px;
+  height: 60px;
+  font-size: 40px;
+  font-family: 'GenEiMGothic2-Heavy';
+  text-align: center;
+}
+
+.commentator1 .sns {
+  position: absolute;
+  width: 410px;
+  height: 60px;
+  left: 1283px;
+  top: 987px;
+  font-size: 36px;
+  font-family: 'GenEiMGothic2-Heavy';
+  text-align: center;
+}
+
+/*--------------------------------------------------
+sponsor logo
+--------------------------------------------------*/
+.container {
+  position: relative;
+  max-width: 100%;
+  width: 175px;
+  height: 170px;
+}
+
+.image {
+  position: absolute;
+  left: 543px;
+  top: 25px;
+}
+
+.image:nth-of-type(1) {
+  padding-left: 20px;
+}

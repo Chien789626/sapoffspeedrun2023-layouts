@@ -1,2 +1,2 @@
 export * from './configschema';
-export * from './exampleReplicant';
+export * from './Sns';

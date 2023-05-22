@@ -1,5 +1,5 @@
 {
-  "name": "nodecg-vue-ts-template",
+  "name": "sapoffspeedrun2023-layouts",
   "version": "2.0.0",
   "description": "Template for NodeCG bundles that use Vue.js and TypeScript.",
   "homepage": "https://github.com/zoton2/nodecg-vue-ts-template#readme",
@@ -47,7 +47,7 @@
     "eslint-import-resolver-typescript": "^3.5.3",
     "eslint-plugin-import": "^2.27.5",
     "eslint-plugin-vue": "^9.9.0",
-    "nodecg-cli": "^8.6.0",
+    "nodecg-cli": "^8.6.4",
     "nodecg-types": "^1.9.0",
     "nodecg-vue-composable": "^1.1.0",
     "npm-run-all": "^4.1.5",
@@ -63,16 +63,40 @@
   },
   "nodecg": {
     "compatibleRange": "^1.9.0",
-    "dashboardPanels": [
-      {
-        "name": "example",
-        "title": "Example",
-        "file": "example.html"
-      }
-    ],
+    "dashboardPanels": [],
     "graphics": [
       {
-        "file": "example.html",
+        "file": "singleHd.html",
+        "width": 1920,
+        "height": 1080
+      },
+      {
+        "file": "singleSd.html",
+        "width": 1920,
+        "height": 1080
+      },
+      {
+        "file": "singleHdCom2.html",
+        "width": 1920,
+        "height": 1080
+      },
+      {
+        "file": "singleSdCom2.html",
+        "width": 1920,
+        "height": 1080
+      },
+      {
+        "file": "singleDs.html",
+        "width": 1920,
+        "height": 1080
+      },
+      {
+        "file": "doubleHd.html",
+        "width": 1920,
+        "height": 1080
+      },
+      {
+        "file": "setup.html",
         "width": 1920,
         "height": 1080
       }

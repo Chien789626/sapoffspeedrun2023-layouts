@@ -1,0 +1,304 @@
+body {
+  background-image: url('../images/4x3.png');
+}
+
+/*--------------------------------------------------
+timer
+--------------------------------------------------*/
+
+.time {
+  position: absolute;
+  width: 360px;
+  height: 130px;
+  left: 195px;
+  top: 300px;
+  text-align: center;
+}
+
+.time p {
+  margin-bottom: 0;
+}
+
+.time > span {
+  font-size: 92px;
+  font-family: 'GenEiMGothic2-Heavy';
+}
+
+.time > span.stopped {
+  color: white;
+  -webkit-text-stroke: 2.7px #1d6d97;
+}
+
+.time > span.running {
+  color: white;
+  -webkit-text-stroke: 2.7px #1d6d97;
+}
+
+.time > span.paused {
+  color: #bfbfbf;
+  -webkit-text-stroke: 2.7px #4e4e4e;
+}
+
+.time > span.finished {
+  color: #fbf46b;
+  -webkit-text-stroke: 2.7px #a7a31e;
+}
+
+.est,
+.mes {
+  font-size: 36px;
+  line-height: 80%;
+  font-family: 'GenEiMGothic2-Bold';
+  color: white;
+  -webkit-text-stroke: 2px #1d6d97;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+}
+
+.est {
+  padding-left: 15px;
+}
+
+/*--------------------------------------------------
+gameinfo
+--------------------------------------------------*/
+
+.gametitle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 1200px;
+  height: 50px;
+  left: 690px;
+  top: 881px;
+}
+
+.gametitle span {
+  position: relative;
+  font-size: 50px;
+  font-family: 'GenEiMGothic2-Black';
+}
+
+.runcategory {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 830px;
+  height: 40px;
+  left: 720px;
+  top: 1000px;
+  font-size: 34px;
+  font-family: 'GenEiMGothic2-Heavy';
+}
+
+.runsystem {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 300px;
+  height: 40px;
+  left: 1590px;
+  top: 1000px;
+  font-size: 34px;
+  font-family: 'GenEiMGothic2-Heavy';
+}
+
+/*--------------------------------------------------
+player
+--------------------------------------------------*/
+.player1 .nameplate {
+  position: absolute;
+  width: 565px;
+  height: 60px;
+  left: 95px;
+  top: 850px;
+  background-image: url(../images/icon/underline.png);
+  background-position: bottom;
+  background-repeat: no-repeat;
+}
+
+.player1 .player_name {
+  position: absolute;
+  width: 505px;
+  height: 60px;
+  left: 155px;
+  top: 845px;
+}
+
+.player1 .player_name > span {
+  display: inline-block;
+  width: 505px;
+  height: 60px;
+  font-size: 40px;
+  font-family: 'GenEiMGothic2-Heavy';
+  text-align: center;
+}
+
+.player1.clear .player_time {
+  opacity: 0;
+}
+
+.player1 .sns {
+  position: absolute;
+  width: 505px;
+  height: 60px;
+  left: 155px;
+  top: 845px;
+  font-size: 36px;
+  font-family: 'GenEiMGothic2-Heavy';
+  text-align: center;
+}
+
+.controller {
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  padding-left: 5px;
+  vertical-align: middle;
+  background-size: contain;
+}
+
+.twitch,
+.twitter,
+.youtube {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.twitch_icon > img {
+  vertical-align: middle;
+  margin-right: 15px;
+  width: 34px;
+  height: 34px;
+}
+
+.twitter_icon > img {
+  vertical-align: middle;
+  margin-right: 15px;
+  width: 34px;
+  height: 34px;
+}
+
+.youtube_icon > img {
+  vertical-align: middle;
+  margin-right: 15px;
+  width: 36px;
+  height: 36px;
+}
+
+/*--------------------------------------------------
+Commentator
+--------------------------------------------------*/
+
+.commentator1 .nameplate {
+  position: absolute;
+  width: 565px;
+  height: 60px;
+  left: 95px;
+  top: 920px;
+  background-image: url(../images/icon/underline.png);
+  background-position: bottom;
+  background-repeat: no-repeat;
+}
+
+.commentator1 .commentator_name {
+  position: absolute;
+  width: 505px;
+  height: 60px;
+  left: 155px;
+  top: 915px;
+}
+
+.commentator1 .commentator_name > span {
+  display: inline-block;
+  width: 505px;
+  height: 60px;
+  font-size: 40px;
+  font-family: 'GenEiMGothic2-Heavy';
+  text-align: center;
+}
+
+.commentator1 .sns {
+  position: absolute;
+  width: 505px;
+  height: 60px;
+  left: 155px;
+  top: 915px;
+  font-size: 36px;
+  font-family: 'GenEiMGothic2-Heavy';
+  text-align: center;
+}
+
+.microphone {
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  padding-left: 5px;
+  vertical-align: 3px;
+  background-size: contain;
+}
+
+/********************************
+commentator2
+********************************/
+.commentator2 .nameplate {
+  position: absolute;
+  width: 565px;
+  height: 60px;
+  left: 95px;
+  top: 995px;
+  background-image: url(../images/icon/underline.png);
+  background-position: bottom;
+  background-repeat: no-repeat;
+}
+
+.commentator2 .commentator_name {
+  position: absolute;
+  width: 505px;
+  height: 60px;
+  left: 155px;
+  top: 990px;
+}
+
+.commentator2 .commentator_name > span {
+  display: inline-block;
+  width: 505px;
+  height: 60px;
+  font-size: 40px;
+  font-family: 'GenEiMGothic2-Heavy';
+  text-align: center;
+}
+
+.commentator2 .sns {
+  position: absolute;
+  width: 505px;
+  height: 60px;
+  left: 155px;
+  top: 990px;
+  font-size: 36px;
+  font-family: 'GenEiMGothic2-Heavy';
+  text-align: center;
+}
+
+/*--------------------------------------------------
+sponsor logo
+--------------------------------------------------*/
+.container {
+  position: relative;
+  width: 235px;
+  max-width: 100%;
+  height: 225px;
+}
+
+.image {
+  position: absolute;
+  top: 50px;
+  left: 470px;
+}
+
+.image:nth-of-type(1) {
+  padding-left: 20px;
+}

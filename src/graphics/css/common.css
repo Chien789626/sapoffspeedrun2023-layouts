@@ -1,0 +1,21 @@
+body {
+  background-repeat: no-repeat;
+  color: white;
+  -webkit-text-stroke: 2.5px #0092cc;
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: 'GenEiMGothic2-Bold';
+  src: url(../fonts/GenEiMGothic2-Bold.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'GenEiMGothic2-Heavy';
+  src: url(../fonts/GenEiMGothic2-Heavy.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'GenEiMGothic2-Black';
+  src: url(../fonts/GenEiMGothic2-Black.ttf) format('truetype');
+}

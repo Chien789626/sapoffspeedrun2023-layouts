@@ -1,0 +1,241 @@
+body {
+  background-image: url('../images/16x9_race.png');
+}
+
+/*--------------------------------------------------
+timer
+--------------------------------------------------*/
+.time {
+  position: absolute;
+  width: 360px;
+  height: 130px;
+  left: 750px;
+  top: 850px;
+  text-align: center;
+}
+
+.time p {
+  margin-bottom: 0;
+}
+
+.time > span {
+  font-size: 92px;
+  font-family: 'GenEiMGothic2-Heavy';
+}
+
+.time > span.stopped {
+  color: white;
+  -webkit-text-stroke: 2.7px #1d6d97;
+}
+
+.time > span.running {
+  color: white;
+  -webkit-text-stroke: 2.7px #1d6d97;
+}
+
+.time > span.paused {
+  color: #bfbfbf;
+  -webkit-text-stroke: 2.7px #4e4e4e;
+}
+
+.time > span.finished {
+  color: #fbf46b;
+  -webkit-text-stroke: 2.7px #a7a31e;
+}
+
+.est,
+.mes {
+  font-size: 36px;
+  line-height: 80%;
+  font-family: 'GenEiMGothic2-Bold';
+  color: white;
+  -webkit-text-stroke: 2px #1d6d97;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+}
+
+.est {
+  padding-left: 15px;
+}
+
+/*--------------------------------------------------
+gameinfo
+DSレイアウトが1人のみのため、画像に要素固定。
+--------------------------------------------------*/
+.gametitle,
+.runcategory,
+.runsystem {
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+}
+
+/*--------------------------------------------------
+player
+--------------------------------------------------*/
+.player1 .player_name {
+  position: absolute;
+  width: 400px;
+  height: 45px;
+  left: 145px;
+  top: 565px;
+  font-size: 40px;
+  font-family: 'GenEiMGothic2-Heavy';
+  text-align: left;
+}
+
+.player1 .sns {
+  position: absolute;
+  width: 400px;
+  height: 45px;
+  left: 145px;
+  top: 563px;
+  font-size: 36px;
+  font-family: 'GenEiMGothic2-Heavy';
+  text-align: left;
+}
+
+.player1.clear .player_time {
+  position: absolute;
+  width: 160px;
+  height: 40px;
+  left: 760px;
+  top: 565px;
+  font-size: 40px;
+  font-family: 'GenEiMGothic2-Heavy';
+  color: #fbf46b;
+  -webkit-text-stroke: 2.7px #a7a31e;
+}
+
+/****************************
+player2
+****************************/
+.player2 .player_name {
+  position: absolute;
+  width: 400px;
+  height: 45px;
+  left: 1075px;
+  top: 565px;
+  font-size: 40px;
+  font-family: 'GenEiMGothic2-Heavy';
+  text-align: left;
+}
+
+.player2 .sns {
+  position: absolute;
+  width: 400px;
+  height: 45px;
+  left: 1075px;
+  top: 563px;
+  font-size: 36px;
+  font-family: 'GenEiMGothic2-Heavy';
+  text-align: left;
+}
+
+.player2.clear .player_time {
+  position: absolute;
+  width: 160px;
+  height: 40px;
+  left: 1695px;
+  top: 565px;
+  font-size: 40px;
+  font-family: 'GenEiMGothic2-Heavy';
+  color: #fbf46b;
+  -webkit-text-stroke: 2.7px #a7a31e;
+}
+
+.controller {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+
+.twitch,
+.twitter,
+.youtube {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.twitch_icon > img {
+  vertical-align: middle;
+  margin-right: 15px;
+  width: 34px;
+  height: 34px;
+}
+
+.twitter_icon > img {
+  vertical-align: middle;
+  margin-right: 15px;
+  width: 34px;
+  height: 34px;
+}
+
+.youtube_icon > img {
+  vertical-align: middle;
+  margin-right: 15px;
+  width: 36px;
+  height: 36px;
+}
+
+/*--------------------------------------------------
+Commentator
+--------------------------------------------------*/
+.commentator1 .commentator_name {
+  position: absolute;
+  width: 500px;
+  height: 60px;
+  left: 90px;
+  top: 980px;
+}
+
+.commentator1 .commentator_name > span {
+  display: inline-block;
+  width: 500px;
+  height: 60px;
+  font-size: 40px;
+  font-family: 'GenEiMGothic2-Heavy';
+  text-align: center;
+}
+
+.microphone {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+
+.commentator1 .sns {
+  position: absolute;
+  width: 500px;
+  height: 60px;
+  left: 95px;
+  top: 980px;
+  font-size: 36px;
+  font-family: 'GenEiMGothic2-Heavy';
+  text-align: center;
+}
+
+/*--------------------------------------------------
+sponsor logo
+--------------------------------------------------*/
+.container {
+  position: relative;
+  max-width: 100%;
+  width: 205px;
+  height: 200px;
+  left: 1680px;
+  top: 835px;
+}
+
+.image {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.image:nth-of-type(1) {
+  padding-left: 20px;
+}
