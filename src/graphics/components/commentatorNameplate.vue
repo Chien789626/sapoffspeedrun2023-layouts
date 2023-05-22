@@ -25,8 +25,16 @@ onMounted(() => {
   //時間出来たら関数化
   setInterval(() => {
     if (name.value == '-') {
-      console.log(isShow.value);
       return;
+    }
+    if (twitch.value == '') {
+      return;
+    }
+    if (sns.twitch === isShow.value) {
+      if (twitter.value === '') {
+        isShow.value = 0;
+        return;
+      }
     }
     if (sns.twitter === isShow.value) {
       if (youtube.value === '') {
@@ -39,7 +47,7 @@ onMounted(() => {
       return;
     }
     isShow.value++;
-  }, 5000);
+  }, 15000);
 });
 
 /*
@@ -113,7 +121,7 @@ const youtube = computed(() => {
 </script>
 
 <template>
-  <div>
+  <div v-if="name != ''">
     <div class="nameplate">
       <span class="microphone">
         <img src="../images/icon/commentator.png" />
