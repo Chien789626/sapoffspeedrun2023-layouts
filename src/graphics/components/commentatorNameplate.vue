@@ -121,7 +121,7 @@ const youtube = computed(() => {
 </script>
 
 <template>
-  <div v-if="name != '-'">
+  <div>
     <div class="nameplate">
       <span class="microphone">
         <img src="../images/icon/commentator.png" />

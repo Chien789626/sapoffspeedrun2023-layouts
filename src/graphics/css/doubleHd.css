@@ -185,19 +185,19 @@ Commentator
 --------------------------------------------------*/
 .commentator1 .commentator_name {
   position: absolute;
-  width: 500px;
-  height: 60px;
-  left: 90px;
+  width: 400px;
+  height: 45px;
+  left: 145px;
   top: 980px;
 }
 
 .commentator1 .commentator_name > span {
   display: inline-block;
-  width: 500px;
-  height: 60px;
+  width: 400px;
+  height: 45px;
   font-size: 40px;
   font-family: 'GenEiMGothic2-Heavy';
-  text-align: center;
+  text-align: left;
 }
 
 .microphone {
@@ -209,13 +209,13 @@ Commentator
 
 .commentator1 .sns {
   position: absolute;
-  width: 500px;
-  height: 60px;
-  left: 95px;
+  width: 400px;
+  height: 45px;
+  left: 145px;
   top: 980px;
   font-size: 36px;
   font-family: 'GenEiMGothic2-Heavy';
-  text-align: center;
+  text-align: left;
 }
 
 /*--------------------------------------------------
