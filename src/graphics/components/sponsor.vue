@@ -9,7 +9,7 @@ onMounted(() => {
   setInterval(() => {
     isShow1.value = !isShow1.value;
     isShow2.value = !isShow2.value;
-  }, 10000);
+  }, 5000);
 });
 
 onBeforeMount(() => {
@@ -20,10 +20,10 @@ onBeforeMount(() => {
 <template>
   <div class="container">
     <Transition>
-      <img v-show="isShow1" class="image" src="../images/logo/e-revo_1.png" />
+      <img v-show="isShow1" class="image1" src="../images/logo/e-revo_1.png" />
     </Transition>
     <Transition>
-      <img v-show="isShow2" class="image" src="../images/logo/e-revo_2.png" />
+      <img v-show="isShow2" class="image2" src="../images/logo/e-revo_2.png" />
     </Transition>
   </div>
 </template>
@@ -31,7 +31,7 @@ onBeforeMount(() => {
 <style>
 .v-enter-active,
 .v-leave-active {
-  transition: opacity 2s ease-in-out;
+  transition: opacity 1s ease-in-out;
 }
 
 .v-enter-from,

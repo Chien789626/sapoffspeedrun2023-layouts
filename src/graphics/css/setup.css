@@ -8,15 +8,20 @@ sponsor logo
 --------------------------------------------------*/
 .container {
   position: relative;
-  max-width: 100%;
   width: 175px;
   height: 170px;
 }
 
-.image {
+.image1 {
   position: absolute;
-  left: 403px;
-  top: 200px;
+  left: 410px;
+  top: 190px;
+}
+
+.image2 {
+  position: absolute;
+  left: 400px;
+  top: 210px;
 }
 
 .image:nth-of-type(1) {
