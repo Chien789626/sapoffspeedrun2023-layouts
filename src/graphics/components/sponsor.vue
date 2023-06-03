@@ -9,7 +9,7 @@ onMounted(() => {
   setInterval(() => {
     isShow1.value = !isShow1.value;
     isShow2.value = !isShow2.value;
-  }, 5000);
+  }, 60000);
 });
 
 onBeforeMount(() => {
