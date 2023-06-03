@@ -1,0 +1,225 @@
+body {
+  background-image: url('../images/3x2.png');
+}
+
+/*--------------------------------------------------
+timer
+--------------------------------------------------*/
+.time {
+  position: absolute;
+  width: 360px;
+  height: 130px;
+  left: 230px;
+  top: 275px;
+  text-align: center;
+}
+
+.time p {
+  margin-bottom: 0;
+}
+
+.time > span {
+  font-size: 92px;
+  font-family: 'GenEiMGothic2-Heavy';
+}
+
+.time > span.stopped {
+  color: white;
+  -webkit-text-stroke: 2.7px #1d6d97;
+}
+
+.time > span.running {
+  color: white;
+  -webkit-text-stroke: 2.7px #1d6d97;
+}
+
+.time > span.paused {
+  color: #bfbfbf;
+  -webkit-text-stroke: 2.7px #4e4e4e;
+}
+
+.time > span.finished {
+  color: #fbf46b;
+  -webkit-text-stroke: 2.7px #a7a31e;
+}
+
+.est,
+.mes {
+  font-size: 36px;
+  line-height: 80%;
+  font-family: 'GenEiMGothic2-Bold';
+  color: white;
+  -webkit-text-stroke: 2px #1d6d97;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+}
+
+.est {
+  padding-left: 15px;
+}
+
+/*--------------------------------------------------
+gameinfo
+GBAレイアウトが1人のみのため、画像に要素固定。
+--------------------------------------------------*/
+.gametitle,
+.runcategory,
+.runsystem {
+  opacity: 0;
+}
+
+/*--------------------------------------------------
+player
+--------------------------------------------------*/
+.player1 .nameplate {
+  position: absolute;
+  width: 565px;
+  height: 60px;
+  left: 130px;
+  top: 845px;
+  background-image: url(../images/icon/underline.png);
+  background-position: bottom;
+  background-repeat: no-repeat;
+}
+
+.player1 .player_name {
+  position: absolute;
+  width: 505px;
+  height: 60px;
+  left: 190px;
+  top: 840px;
+}
+
+.player1 .player_name > span {
+  display: inline-block;
+  width: 505px;
+  height: 60px;
+  font-size: 40px;
+  font-family: 'GenEiMGothic2-Heavy';
+  text-align: center;
+}
+
+.controller {
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  padding-left: 5px;
+  vertical-align: middle;
+  background-size: contain;
+}
+
+.player1 .sns {
+  position: absolute;
+  width: 505px;
+  height: 60px;
+  left: 190px;
+  top: 840px;
+  font-size: 36px;
+  font-family: 'GenEiMGothic2-Heavy';
+  text-align: center;
+}
+
+.player1.clear .player_time {
+  opacity: 0;
+}
+
+.twitch,
+.twitter,
+.youtube {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.twitch_icon > img {
+  vertical-align: middle;
+  margin-right: 15px;
+  width: 34px;
+  height: 34px;
+}
+
+.twitter_icon > img {
+  vertical-align: middle;
+  margin-right: 15px;
+  width: 34px;
+  height: 34px;
+}
+
+.youtube_icon > img {
+  vertical-align: middle;
+  margin-right: 15px;
+  width: 36px;
+  height: 36px;
+}
+
+/*--------------------------------------------------
+Commentator
+--------------------------------------------------*/
+
+.commentator1 .nameplate {
+  position: absolute;
+  width: 565px;
+  height: 60px;
+  left: 130px;
+  top: 925px;
+  background-image: url(../images/icon/underline.png);
+  background-position: bottom;
+  background-repeat: no-repeat;
+}
+
+.commentator1 .commentator_name {
+  position: absolute;
+  width: 565px;
+  height: 60px;
+  left: 190px;
+  top: 920px;
+}
+
+.commentator1 .commentator_name > span {
+  display: inline-block;
+  width: 505px;
+  height: 60px;
+  font-size: 40px;
+  font-family: 'GenEiMGothic2-Heavy';
+  text-align: center;
+}
+
+.microphone {
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  padding-left: 5px;
+  vertical-align: 3px;
+  background-size: contain;
+}
+
+.commentator1 .sns {
+  position: absolute;
+  width: 505px;
+  height: 60px;
+  left: 190px;
+  top: 920px;
+  font-size: 36px;
+  font-family: 'GenEiMGothic2-Heavy';
+  text-align: center;
+}
+
+/*--------------------------------------------------
+sponsor logo
+--------------------------------------------------*/
+.container {
+  position: relative;
+  width: 175px;
+  height: 160px;
+}
+
+.image1 {
+  position: absolute;
+  top: 55px;
+  left: 520px;
+}
+
+.image2 {
+  position: absolute;
+  top: 70px;
+  left: 500px;
+}
