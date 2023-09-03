@@ -68,15 +68,15 @@ gameinfo
   align-items: center;
   justify-content: center;
   position: absolute;
-  width: 1250px;
+  width: 1130px;
   height: 50px;
-  left: 690px;
+  left: 725px;
   top: 881px;
 }
 
 .gametitle span {
   position: relative;
-  font-size: 48px;
+  font-size: 46.3px;
   font-family: 'GenEiMGothic2-Black';
 }
 

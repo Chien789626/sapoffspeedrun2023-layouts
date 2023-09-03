@@ -30,21 +30,18 @@ onMounted(() => {
 
     switch (isShow.value) {
       case sns.name:
-        console.log(sns.name);
         if (twitch.value == '') {
           isShow.value = 2;
         }
         isShow.value++;
         break;
       case sns.twitch:
-        console.log(sns.twitch);
         if (twitter.value == '') {
           isShow.value = 3;
         }
         isShow.value++;
         break;
       case sns.twitter:
-        console.log(sns.twitter);
         if (youtube.value == '') {
           isShow.value = 0;
         } else {
@@ -52,13 +49,12 @@ onMounted(() => {
         }
         break;
       case sns.youtube:
-        console.log(sns.youtube);
         isShow.value = 0;
         break;
       default:
         isShow.value++;
     }
-  }, 30000);
+  }, 5000);
 });
 
 const props = defineProps<Props>();
