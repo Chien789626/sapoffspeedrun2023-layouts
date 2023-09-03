@@ -25,12 +25,12 @@ timer
 
 .time > span.stopped {
   color: white;
-  -webkit-text-stroke: 2.7px #1d6d97;
+  -webkit-text-stroke: 2.7px #006d98;
 }
 
 .time > span.running {
   color: white;
-  -webkit-text-stroke: 2.7px #1d6d97;
+  -webkit-text-stroke: 2.7px #006d98;
 }
 
 .time > span.paused {
@@ -49,7 +49,7 @@ timer
   line-height: 80%;
   font-family: 'GenEiMGothic2-Bold';
   color: white;
-  -webkit-text-stroke: 2px #1d6d97;
+  -webkit-text-stroke: 2px #006d98;
   margin-bottom: 10px;
   padding-bottom: 10px;
 }
@@ -109,7 +109,7 @@ player
 --------------------------------------------------*/
 .player1 .nameplate {
   position: absolute;
-  width: 565px;
+  width: 573px;
   height: 60px;
   left: 30px;
   top: 810px;
@@ -193,7 +193,7 @@ Commentator
 
 .commentator1 .nameplate {
   position: absolute;
-  width: 565px;
+  width: 573px;
   height: 60px;
   left: 30px;
   top: 890px;

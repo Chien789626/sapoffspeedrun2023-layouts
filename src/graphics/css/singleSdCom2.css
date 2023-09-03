@@ -26,12 +26,12 @@ timer
 
 .time > span.stopped {
   color: white;
-  -webkit-text-stroke: 2.7px #1d6d97;
+  -webkit-text-stroke: 2.7px #006d98;
 }
 
 .time > span.running {
   color: white;
-  -webkit-text-stroke: 2.7px #1d6d97;
+  -webkit-text-stroke: 2.7px #006d98;
 }
 
 .time > span.paused {
@@ -50,7 +50,7 @@ timer
   line-height: 80%;
   font-family: 'GenEiMGothic2-Bold';
   color: white;
-  -webkit-text-stroke: 2px #1d6d97;
+  -webkit-text-stroke: 2px #006d98;
   margin-bottom: 10px;
   padding-bottom: 10px;
 }
@@ -68,7 +68,7 @@ gameinfo
   align-items: center;
   justify-content: center;
   position: absolute;
-  width: 1200px;
+  width: 1250px;
   height: 50px;
   left: 690px;
   top: 881px;
@@ -111,10 +111,10 @@ player
 --------------------------------------------------*/
 .player1 .nameplate {
   position: absolute;
-  width: 565px;
+  width: 573px;
   height: 60px;
   left: 95px;
-  top: 850px;
+  top: 855px;
   background-image: url(../images/icon/underline.png);
   background-position: bottom;
   background-repeat: no-repeat;
@@ -125,7 +125,7 @@ player
   width: 505px;
   height: 60px;
   left: 155px;
-  top: 845px;
+  top: 850px;
 }
 
 .player1 .player_name > span {
@@ -146,7 +146,7 @@ player
   width: 505px;
   height: 60px;
   left: 155px;
-  top: 845px;
+  top: 850px;
   font-size: 36px;
   font-family: 'GenEiMGothic2-Heavy';
   text-align: center;
@@ -195,7 +195,7 @@ Commentator
 
 .commentator1 .nameplate {
   position: absolute;
-  width: 565px;
+  width: 573px;
   height: 60px;
   left: 95px;
   top: 920px;

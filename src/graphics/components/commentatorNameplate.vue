@@ -27,34 +27,39 @@ onMounted(() => {
     if (name.value == '-') {
       return;
     }
-    if (twitch.value == '') {
-      return;
-    }
-    if (sns.twitch === isShow.value) {
-      if (twitter.value === '') {
-        isShow.value = 0;
-        return;
-      }
-    }
-    if (sns.twitter === isShow.value) {
-      if (youtube.value === '') {
-        isShow.value = 0;
-        return;
-      }
-    }
-    if (sns.youtube === isShow.value) {
-      isShow.value = 0;
-      return;
-    }
-    isShow.value++;
-  }, 30000);
-});
 
-/*
-onBeforeMount(() => {
-  clearInterval();
+    switch (isShow.value) {
+      case sns.name:
+        console.log(sns.name);
+        if (twitch.value == '') {
+          isShow.value = 2;
+        }
+        isShow.value++;
+        break;
+      case sns.twitch:
+        console.log(sns.twitch);
+        if (twitter.value == '') {
+          isShow.value = 3;
+        }
+        isShow.value++;
+        break;
+      case sns.twitter:
+        console.log(sns.twitter);
+        if (youtube.value == '') {
+          isShow.value = 0;
+        } else {
+          isShow.value++;
+        }
+        break;
+      case sns.youtube:
+        console.log(sns.youtube);
+        isShow.value = 0;
+        break;
+      default:
+        isShow.value++;
+    }
+  }, 5000);
 });
-*/
 
 const props = defineProps<Props>();
 
@@ -129,14 +134,14 @@ const youtube = computed(() => {
     </div>
     <transition name="social" mode="out-in">
       <div
-        v-if="sns.name === isShow && name === commentator[sns.name]"
+        v-if="sns.name === isShow && commentator.includes(name)"
         key="name"
         class="commentator_name"
       >
         <span> {{ name }}</span>
       </div>
       <div
-        v-else-if="sns.twitch === isShow && twitch === commentator[sns.twitch]"
+        v-else-if="sns.twitch === isShow && commentator.includes(twitch)"
         key="twitch"
         class="sns"
       >
@@ -146,7 +151,7 @@ const youtube = computed(() => {
         <span class="twitch"> {{ twitch }}</span>
       </div>
       <div
-        v-else-if="sns.twitter === isShow && twitter === commentator[sns.twitter]"
+        v-else-if="sns.twitter === isShow && commentator.includes(twitter)"
         key="twitter"
         class="sns"
       >
@@ -156,7 +161,7 @@ const youtube = computed(() => {
         <span class="twitter"> {{ twitter }}</span>
       </div>
       <div
-        v-else-if="sns.youtube === isShow && youtube === commentator[sns.youtube]"
+        v-else-if="sns.youtube === isShow && commentator.includes(youtube)"
         key="youtube"
         class="sns"
       >

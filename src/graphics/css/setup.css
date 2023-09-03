@@ -1,6 +1,6 @@
 body {
   background-image: url('../images/standby.png');
-  -webkit-text-stroke: 1.7px #0092cc;
+  -webkit-text-stroke: 1.8px #006d98;
 }
 
 /*--------------------------------------------------
@@ -33,10 +33,10 @@ Schedule
 --------------------------------------------------*/
 .next1 {
   position: relative;
-  width: 510px;
+  width: 555px;
   height: 60px;
   top: 400px;
-  left: 75px;
+  left: 35px;
 }
 
 .next1 .title {
@@ -61,7 +61,7 @@ Schedule
 .category_runner .runner {
   font-size: 24px;
   font-family: 'GenEiMGothic2-Black';
-  -webkit-text-stroke: 1.3px #0092cc;
+  -webkit-text-stroke: 1.5px #006d98;
 }
 
 .bgm {
@@ -69,7 +69,7 @@ Schedule
   display: flex;
   align-items: flex-end;
   left: 1235px;
-  top: 965px;
+  top: 960px;
   width: 657px;
   height: 80px;
 }
@@ -78,5 +78,5 @@ Schedule
   position: relative;
   font-size: 28px;
   font-family: 'GenEiMGothic2-Black';
-  -webkit-text-stroke: 1.3px #0092cc;
+  -webkit-text-stroke: 1.5px #006d98;
 }

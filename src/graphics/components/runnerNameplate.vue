@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { useReplicant } from 'nodecg-vue-composable';
-import { computed, onMounted, Ref, ref } from 'vue';
+import { computed, onMounted, Ref, ref, registerRuntimeCompiler } from 'vue';
 import { RunDataActiveRun, Timer } from '@sapoffspeedrun2023-layouts/types/schemas/speedcontrol';
 import { SNS } from '@sapoffspeedrun2023-layouts/types/schemas/Sns';
 import * as util from '../util/format';
@@ -23,38 +23,44 @@ let isShow: Ref<number> = ref(0);
 
 onMounted(() => {
   setInterval(() => {
-    //時間出来たら関数化
     if (name.value == '-') {
       return;
     }
-    if (twitch.value == '') {
-      return;
-    }
-    if (sns.twitch === isShow.value) {
-      if (twitter.value === '') {
-        isShow.value = 0;
-        return;
-      }
-    }
-    if (sns.twitter === isShow.value) {
-      if (youtube.value === '') {
-        isShow.value = 0;
-        return;
-      }
-    }
-    if (sns.youtube === isShow.value) {
-      isShow.value = 0;
-      return;
-    }
-    isShow.value++;
-  }, 30000);
-});
 
-/*
-onBeforeMount(() => {
-  clearInterval();
+    switch (isShow.value) {
+      case sns.name:
+        console.log(sns.name);
+        if (twitch.value == '') {
+          isShow.value = 2;
+        } else {
+          isShow.value++;
+        }
+        break;
+      case sns.twitch:
+        console.log(sns.twitch);
+        if (twitter.value == '') {
+          isShow.value = 3;
+        } else {
+          isShow.value++;
+        }
+        break;
+      case sns.twitter:
+        console.log(sns.twitter);
+        if (youtube.value == '') {
+          isShow.value = 0;
+        } else {
+          isShow.value++;
+        }
+        break;
+      case sns.youtube:
+        console.log(sns.youtube);
+        isShow.value = 0;
+        break;
+      default:
+        isShow.value++;
+    }
+  }, 5000);
 });
-*/
 
 const props = defineProps<Props>();
 
@@ -133,34 +139,22 @@ const finishTime = computed(() => {
       </span>
     </div>
     <transition name="social" mode="out-in">
-      <div v-if="sns.name === isShow && name === player[sns.name]" key="name" class="player_name">
+      <div v-if="sns.name === isShow && player.includes(name)" key="name" class="player_name">
         <span> {{ name }}</span>
       </div>
-      <div
-        v-else-if="sns.twitch === isShow && twitch === player[sns.twitch]"
-        key="twitch"
-        class="sns"
-      >
+      <div v-else-if="sns.twitch === isShow && player.includes(twitch)" key="twitch" class="sns">
         <span class="twitch_icon">
           <img src="../images/icon/twitch.png" />
         </span>
         <span class="twitch"> {{ twitch }}</span>
       </div>
-      <div
-        v-else-if="sns.twitter === isShow && twitter === player[sns.twitter]"
-        key="youtube"
-        class="sns"
-      >
+      <div v-else-if="sns.twitter === isShow && player.includes(twitter)" key="twitter" class="sns">
         <span class="twitter_icon">
           <img src="../images/icon/twitter.png" />
         </span>
         <span class="twitter"> {{ twitter }}</span>
       </div>
-      <div
-        v-else-if="sns.youtube === isShow && youtube === player[sns.youtube]"
-        key="twitter"
-        class="sns"
-      >
+      <div v-else-if="sns.youtube === isShow && player.includes(youtube)" key="youtube" class="sns">
         <span class="youtube_icon">
           <img src="../images/icon/youtube.png" />
         </span>
