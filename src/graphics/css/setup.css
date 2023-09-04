@@ -34,7 +34,7 @@ Schedule
 .next1 {
   position: relative;
   width: 555px;
-  height: 60px;
+  height: 180px;
   top: 400px;
   left: 35px;
 }
@@ -62,6 +62,8 @@ Schedule
   font-size: 24px;
   font-family: 'GenEiMGothic2-Black';
   -webkit-text-stroke: 1.5px #006d98;
+  overflow-wrap: break-word;
+  word-break: keep-all;
 }
 
 .bgm {

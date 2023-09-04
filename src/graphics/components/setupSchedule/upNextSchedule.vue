@@ -26,7 +26,8 @@ const runners = computed(() => {
     </div>
     <div v-if="props.runData?.category != '-'" class="category_runner">
       <span class="category">{{ props.runData?.category }}</span>
-      <span class="runner"> - by {{ runners }}</span>
+      <span class="runner"> - by </span>
+      <span class="runner">{{ runners }}</span>
     </div>
   </div>
 </template>
